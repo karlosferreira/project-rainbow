@@ -1,0 +1,190 @@
+@import "../../../../PF.Base/less/base/mixins";
+@import "../../../../PF.Base/less/variables";
+@import "../../../../PF.Base/less/variables/bootstrap";
+@import "../../../../PF.Base/less/bootstrap/mixins/vendor-prefixes";
+
+// ADMINCP sponsor settings
+.betterads-sponsor-setting {
+    .betterads-sponsor-settings-filter {
+        display: flex;
+    }
+    #choose-user-group-form, #filter-apps {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    #filter-apps {
+        margin-left: 10px;
+    }
+    .user-group-settings {
+        .panel-heading {
+            display: none;
+        }
+    }
+}
+
+// ADMINCP: ADD AD
+.ad-admincp-add {
+    .js_upload_form {
+        margin-left: 0;
+    }
+    .and-inline {
+        margin: 0 5px;
+    }
+    .ad-date-time {
+        .col-md-6 {
+            > div:first-child {
+                display: flex;
+                line-height: 40px;
+            }
+            .custom-checkbox-wrapper {
+                margin: 0;
+            }
+            label {
+                margin-right: 10px;
+                line-height: 40px;
+                .custom-checkbox {
+                    top: 10px;
+                }
+            }
+        }
+    }
+    .checkbox-input {
+        display: flex;
+        label {
+            line-height: 40px;
+            min-width: 120px;
+            font-weight: bold;
+            span.custom-checkbox {
+                top: 10px;
+            }
+        }
+        #total_view, #total_click {
+            width: 30%;
+        }
+    }
+    #js_upload_form {
+        margin-left: 0 !important;
+    }
+}
+
+// PREVIEW AD
+body#page_ad_preview {
+    overflow: hidden;
+    #left {
+        min-height: 1px;
+    }
+    ._block {
+        >div:not(#js_block_border_apps_core_betterads_block_display):not(.js_ad_space_parent) {
+            display: none;
+        }
+    }
+    .bts-block {
+        margin-top: 0;
+    }
+    #content-stage {
+        background: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .betterads-preview-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 100;
+    }
+
+    .navbar.main-navigation .site-menu .overlay {
+        z-index: 0;
+    }
+}
+
+// FIX PREVIEW - FULL WIDTH MODE
+body#page_ad_add, body.ad-admincp-add, body.ad-admincp-addplacement, body.ad-admincp-index {
+    .js_box_holder {
+        overflow: hidden;
+    }
+    .js_box_fullmode {
+        top: 0 !important;
+        .js_box_title {
+            display: none !important;
+        }
+    }
+}
+
+body#page_ad_add, body.ad-admincp-add, body.ad-admincp-addplacement, body.ad-admincp-index {
+    .js_box_fullmode {
+        .js_box_close {
+            z-index: 1;
+            right: 30px !important;
+        }
+    }
+}
+
+body.ad-admincp-add .js_upload_form_wrapper .js_upload_form_current {
+  display: none;
+}
+body.ad-admincp-add .js_upload_form_wrapper.show-current .js_upload_form_current {
+  display: flex;
+}
+body.ad-admincp-add .js_upload_form_wrapper.show-current .js_upload_form {
+  display: none;
+}
+body.ad-admincp-add .js_upload_form_wrapper .js_upload_form {
+  margin-left: 0;
+}
+body.ad-admincp-add .change_photo_block {
+  display: flex;
+  align-items: center;
+}
+body.ad-admincp-add .change_photo_block span, body.ad-admincp-add .change_photo_block > a {
+  width: 72px;
+  border-radius: 3px;
+  .bg-img-ratio(72px);
+}
+body.ad-admincp-add .change_photo_block .extra_info {
+  display: inline-flex;
+  flex-direction: column;
+  .ml-2();
+}
+body.ad-admincp-add .change_photo_block .extra_info a {
+  .fz-lh(12px);
+}
+body.ad-admincp-add .change_photo_block .extra_info a .ico {
+  display: inline-block;
+}
+body.ad-admincp-add .change_photo_block .extra_info a.change_photo {
+border-bottom: 1px solid @border-color-light;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+body.ad-admincp-add .change_photo_block .extra_info a.remove {
+    color: @gray-dark;
+}
+html[dir=rtl] body.ad-admincp-add .change_photo_block .extra_info {
+  margin-left: 0;
+  .mr-2();
+}
+
+body#page_ad_sample {
+    #section-header {
+        .sticky-bar {
+            &.visible-md.visible-lg {
+                position: relative;
+            }
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.8);
+                content: '';
+                z-index: 2;
+            }
+        }
+    }
+}

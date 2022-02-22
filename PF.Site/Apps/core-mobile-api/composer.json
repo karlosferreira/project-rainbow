@@ -1,0 +1,21 @@
+{
+  "name": "phpfox/core-mobile-api",
+  "authors": [
+    {
+      "name": "PHPFOX",
+      "email": "phpfox@phpfox.com"
+    }
+  ],
+  "require": {
+    "symfony/http-foundation": "^3.4",
+    "ezyang/htmlpurifier": "^4.10"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5"
+  },
+  "autoload-dev": {
+    "classmap": [
+      "../../../PF.Base/include/library/phpfox"
+    ]
+  }
+}

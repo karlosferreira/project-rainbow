@@ -1,0 +1,4 @@
+<?php
+
+define('STORAGE_FOLDER', './');
+define('STORAGE_KEY', '');

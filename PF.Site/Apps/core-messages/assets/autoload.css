@@ -1,0 +1,26 @@
+#js_core_messages_content .js_group_conversation_title,
+#js_core_messages_content .js_custom_list_title
+{
+    cursor: pointer;
+}
+.core-messages-admincp-messages .mass-actions .left
+{
+    float: left;
+}
+
+.core-messages-admincp-messages .mass-actions .right
+{
+    float: right;
+}
+.core-messages-admincp-messages .time-selection
+{
+    position: relative;
+}
+.core-messages-admincp-messages .col-md-6
+{
+    padding-left: 0;
+}
+.core-messages-admincp-messages .time-selection .input-group
+{
+    width: 100%;
+}

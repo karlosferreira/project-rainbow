@@ -1,0 +1,232 @@
+body.admincp-fixed-menu .ui-datepicker-trigger
+{
+    position: absolute;
+    top: 55%;
+    right: 12px;
+}
+body.admincp-fixed-menu .pager_outer
+{
+    text-align: center !important;
+}
+body.admincp-fixed-menu .manage-plans .input-filter
+{
+    margin-bottom: 15px;
+}
+body.admincp-fixed-menu .manage-plans .col-md-6,
+body.admincp-fixed-menu .manage-plans .col-md-12
+{
+    padding-left: 0!important;
+}
+
+.admincp-add-subscription-package-form .max-character
+{
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.admincp-add-subscription-package-form .max-character span
+{
+    color: #a2a2a2;
+}
+.admincp-add-subscription-package-form .visible-checkbox
+{
+    width: 17px;
+    height: 20px;
+    margin: 0 !important;
+    position: absolute;
+    left: 0;
+}
+.admincp-add-subscription-package-form .visible-content
+{
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.admincp-add-subscription-package-form .visible-content .visible-item,
+.admincp-add-subscription-package-form .free-package
+{
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.admincp-add-subscription-package-form .currency-notice
+{
+    color: #a2a2a2;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.admincp-add-subscription-package-form .notice
+{
+    color: #a2a2a2;
+    margin-bottom: 15px;
+}
+.admincp-add-subscription-package-form .js_background_color ._colorpicker_holder {
+    position: inherit;
+    width: 64px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.core-subscriptions-admincp-add-compare .form-group .title
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.core-subscriptions-admincp-add-compare .package-title
+{
+    font-size: 22px;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+.core-subscriptions-admincp-add-compare .package-feature
+{
+    padding: 20px 0;
+}
+
+.alert-empty
+{
+    background-color: #e5eaef !important;
+}
+.core-subscriptions-admincp-delete-reason .delete-option input[type="radio"]
+{
+    width: 16px;
+    height: 16px;
+}
+.core-subscriptions-admincp-delete-reason .delete-option label
+{
+    font-size: 14px;
+    vertical-align: middle;
+}
+.core-subscriptions-admincp-delete-reason .extra-option
+{
+    display: none;
+}
+
+.core-subscriptions-admincp-reason-index .form-group
+{
+    margin-top: 15px;
+}
+.core-subscriptions-admincp-reason-index .main-title
+{
+    height: 32px;
+    font-size: 24px;
+}
+.core-subscriptions-admincp-reason-index .add-button-title a
+{
+    color: #fff !important;
+    float: right;
+}
+.core-subscriptions-admincp-reason-index .select-date .date-from
+{
+    position: relative;
+    width: 48%;
+    display: inline-block;
+}
+.core-subscriptions-admincp-reason-index .select-date .date-to
+{
+    position: relative;
+    width: 48%;
+    display: inline-block;
+}
+.core-subscriptions-admincp-reason-index .select-date .seperate
+{
+    display: inline-block;
+}
+
+.core-subscriptions-admincp-subscribe-view .row
+{
+    margin-bottom: 10px;
+}
+.core-subscriptions-admincp-subscribe-view span.title
+{
+    margin-right: 5px;
+}
+.core-subscriptions-admincp-subscribe-view .form-group span
+{
+    font-size: 16px;
+}
+.core-subscriptions-admincp-subscribe-view .admincp-recent-payment table tr th,
+.core-subscriptions-admincp-subscribe-view .admincp-recent-payment table tr td
+{
+    font-size: 14px;
+}
+
+.core-subscriptions-manage-packages .date-filter .select-date {
+    display: flex;
+    align-items: center;
+}
+
+.core-subscriptions-manage-packages .date-filter .select-date > div{
+    position: relative;
+    flex: 1;
+}
+
+.core-subscriptions-manage-packages .date-filter .select-date > span{
+    padding: 0 6px;
+    flex: none;
+}
+
+.core-subscription-admincp-action-package .form-inline
+{
+    position: relative;
+}
+.core-subscriptions-admincp-add-compare .text-selection-init
+{
+    display: none;
+}
+.core-subscriptions-admincp-add-compare .button-group
+{
+    margin-top: 15px;
+}
+.core-subscriptions-admincp-delete-reason .form-group .title
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1b6d85;
+}
+
+
+.core-subscriptions-admincp-list .select-date .date-from
+{
+    position: relative;
+    width: 48%;
+    display: inline-block;
+}
+.core-subscriptions-admincp-list .select-date .date-to
+{
+    position: relative;
+    width: 48%;
+    display: inline-block;
+}
+.core-subscriptions-admincp-list .select-date .seperate
+{
+    display: inline-block;
+}
+
+.core-subscriptions-admincp-subscribe-view .admincp-recent-payment .title
+{
+    font-size: 22px;
+}
+
+.core-subscription-admincp-compare-block .membership-comparison-container .table > thead > tr > th
+{
+    vertical-align: top ;
+}
+.core-subscription-admincp-compare-block .membership-comparison-container i
+{
+    color: black;
+}
+
+.core-subscription-admincp-compare-block .item-title-block
+{
+    margin-bottom: 8px;
+}
+
+.subscribe-admincp-index .ui-datepicker-year,
+.subscribe-admincp-list .ui-datepicker-year,
+.subscribe-admincp-reason .ui-datepicker-year
+{
+    color: hotpink !important;
+}
