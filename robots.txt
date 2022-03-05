@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /PF.Base/
-Disallow: /PF.Site/
-Disallow: /PF.Src/
