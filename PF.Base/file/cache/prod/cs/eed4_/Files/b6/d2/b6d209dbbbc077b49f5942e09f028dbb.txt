@@ -1,0 +1,1 @@
+a:5:{s:1:"d";a:6:{s:8:"cache_id";s:1:"4";s:9:"file_name";s:12:"user/cover/1";s:10:"cache_data";s:1:"2";s:9:"data_size";s:1:"0";s:7:"type_id";N;s:10:"time_stamp";s:1:"1";}s:1:"g";a:0:{}s:1:"e";O:8:"DateTime":3:{s:4:"date";s:26:"2022-03-05 12:30:23.348464";s:13:"timezone_type";i:3;s:8:"timezone";s:3:"GMT";}s:1:"m";N;s:1:"c";N;}

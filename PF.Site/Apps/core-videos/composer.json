@@ -1,0 +1,7 @@
+{
+	"require": {
+		"zencoder/zencoder-php": "*",
+		"guzzlehttp/guzzle": "6.5.*",
+		"muxinc/mux-php": "0.5.0"
+	}
+}

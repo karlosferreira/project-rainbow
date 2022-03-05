@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html {{ html }}>
+	<head>
+		<title>{{ title }}</title>
+		{{ header }}
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	</head>
+	<body {{ body }}>
+		<div class="landing-background row_image"></div>
+		<div id="pf-loading-message">
+			<span class="l-1"></span>
+			<span class="l-2"></span>
+			<span class="l-3"></span>
+			<span class="l-4"></span>
+			<span class="l-5"></span>
+			<span class="l-6"></span>
+		</div>
+		<div id="section-header">
+			<div class="sticky-bar">
+				<div class="container sticky-bar-inner h-6 {% if setting('user.hide_main_menu') == true %}setting-hide-menu{% endif %}">
+					<div class="mr-2 site-logo-block">
+						{{ logo }}
+					</div>
+
+					<!-- Button collapse main nav when on device -->
+					{% if not setting('user.hide_main_menu') or is_user() == true %}
+						<button type="button" class="btn-nav-toggle collapsed mr-2 js-btn-collapse-main-nav"></button>
+					{% endif %}
+
+					{% if user_group_setting('search.can_use_global_search') %}
+						<div id="search-panel" class="search-panel mr-7">
+							<div class="js_temp_friend_search_form"></div>
+							<form method="get" action="{{url('search')}}" class="header_search_form" id="header_search_form">
+								<div class="form-group has-feedback">
+									<span class="ico ico-arrow-left btn-globalsearch-return"></span>
+									<input type="text" name="q" placeholder="{{ _p('search') }}..." autocomplete="off" class="form-control input-sm in_focus" id="header_sub_menu_search_input" />
+									<span class="ico ico-search-o form-control-feedback" data-action="submit_search_form"></span>
+									<span class="ico ico-search-o form-control-feedback btn-mask-action"></span>
+								</div>
+							</form>
+						</div>
+					{% endif %}
+
+					<!-- Main Navigation -->
+					{% if not setting('user.hide_main_menu') or is_user() == true %}
+						<div class="fixed-main-navigation">
+							<div class="dropdown">
+								<span data-toggle="dropdown"><i class="ico ico-navbar"></i></span>
+								<ul class="dropdown-menu site_menu">
+									{{menu_list}}
+								</ul>
+							</div>
+							<span class="js-btn-collapse-main-nav link"></span>
+						</div>
+					{% endif %}
+
+					{% if is_user() == true %}
+						<div id="user_sticky_bar" class="user-sticky-bar"></div>
+					{% else %}
+						{{sticky_bar}}
+					{% endif %}
+				</div>
+			</div>
+			<nav class="navbar main-navigation collapse navbar-collapse" id="main-navigation-collapse">
+				<div class="container">
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					{{menu}}
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			{{ location_6 }}
+
+		</div>
+
+		<div id="main" class="{{main_class}}">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						{{ location_11 }}
+					</div>
+				</div>
+				<div class="layout-main">
+					<div class="layout-left " id="left">
+                        {% if get_controller_name() == 'index-visitor' %}
+							<div id="index-visitor-error">
+                            {{ errors }}
+							</div>
+                        {% endif %}
+						{{left}}
+					</div>
+					<div class="layout-middle" id="content-holder">
+						<div id="content-stage" class="bg-tran">
+							<div id="top">
+								{{ main_top }}
+							</div>
+							<div class="">
+								{{ breadcrumb }}
+							</div>
+							<div id="content">
+								{{ errors }}
+								{{ content }}
+							</div>
+						</div>
+					</div>
+					<div class="layout-right" id="right">
+						{{ right }}
+					</div>
+					<div class="btn-scrolltop" style="display: none">
+						<span class="btn btn-round btn-gradient btn-primary s-5" onclick="page_scroll2top();">
+							<i class="ico ico-goup"></i>
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						{{ location_8 }}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="bottom_placeholder">
+			{{ location_12 }}
+		</div>
+
+		<footer id="section-footer">
+			<div class="container">
+				{{ footer }}
+				{{ location_5 }}
+			</div>
+		</footer>
+		{{ js }}
+		<div class="nav-mask-modal"></div>
+	</body>
+</html>
