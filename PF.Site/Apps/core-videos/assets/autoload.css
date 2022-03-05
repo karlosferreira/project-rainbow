@@ -1,6 +1,0 @@
-#_sort tr > td:first-of-type {
-  text-align: center !important;
-}
-#_sort tr > td:first-of-type i {
-  cursor: move;
-}

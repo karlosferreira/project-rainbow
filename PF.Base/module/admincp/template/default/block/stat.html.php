@@ -1,1 +1,0 @@
-<div class="ajax" data-url="{url link='admincp.stat.dashboard'}"></div>
